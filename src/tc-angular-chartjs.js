@@ -136,6 +136,7 @@ function TcChartjsFactory() {
 
           if (exposeChart) {
             $scope.chart = chartObj;
+            $scope.$emit('chart-create', $scope.chart);
           }
           chartObj.resize();
         }
